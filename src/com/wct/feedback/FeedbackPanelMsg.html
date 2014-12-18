@@ -1,0 +1,31 @@
+<wicket:panel>
+	<div class="row" wicket:id="feedbackul">
+		<div class="col-md-12">
+			<div class="alert alert-dismissable" wicket:id="messagesContainer">
+				<button type="button" class="close" wicket:id="defilementFeedBackPanel" data-toggle="collapse" data-target="#allFeedbackMessages"><i id="iconFeedbackDefilement" class="glyphicon glyphicon-chevron-up"></i></button>
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true" wicket:id="closeFeedBackPanel">&times;</button>
+				<h4 wicket:id="titleMsg"></h4>
+				<div id="allFeedbackMessages">
+					<div class="errorlevel" wicket:id="messages">
+						<li><span class="errorlevel" wicket:id="message">A message</span></li>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$('#allFeedbackMessages').on('show.bs.collapse', function () {
+				$('#iconFeedbackDefilement').attr("class", "glyphicon glyphicon-chevron-up");
+			});
+			
+			$('#allFeedbackMessages').on('hidden.bs.collapse', function () {
+				$('#iconFeedbackDefilement').attr("class", "glyphicon glyphicon-chevron-down");
+			});
+			
+			$('#allFeedbackMessages').collapse("show");
+		});
+
+		
+	</script>
+</wicket:panel>

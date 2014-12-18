@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<wicket:extend>
+
+		<table cellspacing="0" class="table table-hover">
+			<thead>
+				<tr>
+					<th wicket:id="orderById">ID</th>
+					<th wicket:id="orderByFirstName">First Name</th>
+					<th wicket:id="orderByLastName">Last Name</th>
+					<th wicket:id="orderByStreet">Street</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr wicket:id="customers">
+					<td><span wicket:id="id">[id]</span></td>
+					<td><span wicket:id="firstName">[firstName]</span></td>
+					<td><span wicket:id="lastName">[lastName]</span></td>
+					<td><span wicket:id="street">[street]</span></td>
+					<td>
+						<a href="#" wicket:id="edit"><span class="glyphicon glyphicon-edit"></span></a>
+						<a href="#" wicket:id="delete"><span class="glyphicon glyphicon-remove"></span></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<span wicket:id="navigator">[dataview navigator]</span><br/>
+	</wicket:extend>
+</body>
+</html>

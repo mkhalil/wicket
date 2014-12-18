@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<wicket:extend>
+		<div class="row">
+			<div class="col-md-12">
+			
+				<table class="table table-striped" wicket:id="tableContainer">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Age</th>
+						</tr>
+						<tr wicket:id="items">
+							<td wicket:id="id">1</td>
+							<td wicket:id="firstName">Khalil</td>
+							<td wicket:id="lastName">MLika</td>
+							<td wicket:id="age">khalilos</td>
+						</tr>
+					</thead>
+				
+				</table>
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5"></div>
+			<div class="col-md-2">
+				<button type="button" class="btn btn-primary btn-lg btn-block" wicket:id="importBtn">Importer</button>
+			</div>
+			<div class="col-md-5"></div>
+		</div>
+		<div class="row">
+			<a href="#" wicket:id="count">count</a>
+			<span wicket:id="number"></span>
+		</div>
+		<div wicket:id="modal"></div>
+	</wicket:extend>
+</body>
+</html>

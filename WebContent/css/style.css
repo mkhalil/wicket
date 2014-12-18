@@ -1,0 +1,101 @@
+.wicket_orderDown {
+	background-image: url(desc.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	background-color:#8dbdd8;
+}
+
+.wicket_orderUp {
+	background-image: url(asc.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	background-color:#e6EEEE;
+}
+
+.wicket_orderNone{
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
+
+/* drapeaux */
+div.mod-languages ul {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+div.mod-languages li {
+	margin-left: 0px;
+	margin-right: 4px;
+}
+
+div.mod-languages ul.lang-inline li {
+	display:inline;
+}
+
+div.mod-languages ul.lang-block li {
+	display:block;
+}
+
+div.mod-languages img {
+	border:none;
+}
+
+div.mod-languages a {
+	text-decoration: none;
+}
+
+.lang-active img {
+	box-shadow:0 0 11px 2px #999999;
+}
+
+
+.mod-languages{
+	display: inline;
+}
+
+.lang-inline{
+	display: inline;
+}
+
+.language-menu {
+	padding: 10px;
+}
+
+.padding-languages{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.error-border{
+	border-color: red;
+}
+
+.errorlevel{
+	font-weight: bold;
+}
+
+.error{
+	color:#a94442;
+	border-color: #a94442;
+}
+
+.feedbackPanelERROR{
+	color: #b94a48;
+}
+
+.feedbackPanelWARNING{
+	color:#c09853;
+}
+
+.feedbackPanelINFO{
+	color: #3a87ad;
+}
+
+.feedbackPanelSUCCESS{
+	color: #468847;
+}

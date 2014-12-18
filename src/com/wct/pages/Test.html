@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<wicket:extend>
+			<div wicket:id="feedback"></div>
+
+			<form wicket:id="form">
+			    Text field: <input wicket:id="text" type="text"/><br/>
+			    File field: <input wicket:id="file" type="file"/> (<span wicket:id="max"></span> max)<br/><br/>
+			    <div wicket:id="progress"></div>
+			    <input type="submit" value="Regular Submit"/> <input wicket:id="ajaxSubmit" type="button" value="Ajax Submit"/>
+			</form>
+			
+			<div wicket:id="recursive"></div>
+		</wicket:extend>
+	</body>
+</html>

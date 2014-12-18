@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>WicketAutoFormation</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <display-name>Wicket Web Application</display-name>
+  <!-- Repeater Application  -->
+  <servlet>
+  	<servlet-name>RepeaterApplication</servlet-name>
+  	<servlet-class>org.apache.wicket.protocol.http.WicketServlet</servlet-class>
+  	<init-param>
+  		<param-name>applicationClassName</param-name>
+  		<param-value>com.wct.applications.RepeaterApplication</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RepeaterApplication</servlet-name>
+  	<url-pattern>/repeater/*</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Crud Application -->
+  <servlet>
+  	<servlet-name>CrudApplication</servlet-name>
+  	<servlet-class>org.apache.wicket.protocol.http.WicketServlet</servlet-class>
+  	<init-param>
+  		<param-name>applicationClassName</param-name>
+  		<param-value>com.wct.applications.CrudApplication</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CrudApplication</servlet-name>
+  	<url-pattern>/crud/*</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
