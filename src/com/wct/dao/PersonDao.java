@@ -14,7 +14,7 @@ public class PersonDao extends AbstractDAO<Person, Integer> {
      * 
      * @param id The id of the UserProfile.
      * @return number of users.
-     * @throws DAOException If an error ocured.
+     * @throws DAOException If an error occurred.
      */
     public Long size()
             throws DAOException
